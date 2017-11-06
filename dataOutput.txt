@@ -1,0 +1,11 @@
+Top Three Articles:
+ Title:  Bears love berries, alleges bear  Path:  /article/bears-love-berries
+ Title:  Bad things gone, say good people  Path:  /article/bad-things-gone
+ Title:  Goats eat Google's lawn  Path:  /article/goats-eat-googles
+Top Three Articles:
+ Author:  Ursula La Multa  Views:  507594
+ Author:  Rudolf von Treppenwitz  Views:  423457
+ Author:  Anonymous Contributor  Views:  170098
+ Author:  Markoff Chaney  Views:  84557
+Top days with errors:
+ Day 2016-07-17  Error:  2.0 %
