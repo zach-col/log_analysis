@@ -2,6 +2,7 @@
 
 import psycopg2
 
+
 def topThreeArticles():
     # query1 will select top 3 most popular articles
     query1 = '''SELECT articles.title, log.path, COUNT(*)
@@ -22,11 +23,12 @@ def topThreeArticles():
     # Looping thru data
     print "Top Three Articles:"
     for data in queryData:
-      print " Title: ",data[0]," views: ",data[2]
+        print " Title: ", data[0], " views: ", data[2]
     db.close()
 
+
 def topActors():
-    #query2 will select most popular authors"
+    # query2 will select most popular authors"
     query2 = '''
     SELECT authors.name, COUNT(*) as views
     FROM ((log join articles
@@ -48,9 +50,10 @@ def topActors():
     # Looping thru data
     print "Most popular Authors:"
     for data in queryData:
-      print " Author: ",data[0]," Views: ",data[1]
+        print " Author: ", data[0], " Views: ", data[1]
 
     db.close()
+
 
 def topErrorDays():
     # query3 select days with request that are more then 1%
@@ -75,7 +78,7 @@ def topErrorDays():
     # Looping thru data
     print "Top days with errors:"
     for data in queryData:
-      print " Day",data[0]," Error: ",data[1],"%"
+        print " Day", data[0], " Error: ", data[1], "%"
 
     db.close()
 
