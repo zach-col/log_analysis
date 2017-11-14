@@ -1,11 +1,13 @@
 Top Three Articles:
+ Title:  Candidate is jerk, alleges rival  views:  338647
  Title:  Bears love berries, alleges bear  views:  253801
  Title:  Bad things gone, say good people  views:  170098
- Title:  Goats eat Google's lawn  views:  84906
+
 Most popular Authors:
  Author:  Ursula La Multa  Views:  507594
  Author:  Rudolf von Treppenwitz  Views:  423457
  Author:  Anonymous Contributor  Views:  170098
  Author:  Markoff Chaney  Views:  84557
+
 Top days with errors:
  Day 2016-07-17  Error:  2.0 %
