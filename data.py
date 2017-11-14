@@ -31,7 +31,7 @@ def topThreeArticles():
     db.close()
 
 
-def topActors():
+def topAuthors():
     # query2 will select most popular authors"
     query2 = '''
     SELECT authors.name, COUNT(*) as views
@@ -88,5 +88,5 @@ def topErrorDays():
 
 if __name__ == "__main__":
     topThreeArticles()
-    topActors()
+    topAuthors()
     topErrorDays()
