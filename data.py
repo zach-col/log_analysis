@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # using python 2
 
 import psycopg2
@@ -5,11 +6,14 @@ import psycopg2
 
 def topThreeArticles():
     # query1 will select top 3 most popular articles
-    query1 = '''SELECT articles.title, log.path, COUNT(*)
+    query1 = '''
+    SELECT articles.title, COUNT(*)
     FROM log join articles
     on articles.slug = substr(log.path, 10)
-    GROUP BY articles.title, log.path
-    ORDER BY COUNT DESC offset 1 limit 3;'''
+    GROUP BY articles.title
+    ORDER BY COUNT DESC limit 3;
+    '''
+
     # Database name
     DBNAME = "news"
     # Connecting to database
@@ -23,7 +27,7 @@ def topThreeArticles():
     # Looping thru data
     print "Top Three Articles:"
     for data in queryData:
-        print " Title: ", data[0], " views: ", data[2]
+        print " Title: ", data[0], " views: ", data[1]
     db.close()
 
 
