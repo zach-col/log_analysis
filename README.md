@@ -11,10 +11,12 @@ SELECT CAST(time AS DATE), COUNT(*)</br>
 FROM log</br>
 WHERE status!='200 OK'</br>
 GROUP BY CAST(time AS DATE);</br>
-4 create totalCount view in the news Database</br>
+
+3 create totalCount view in the news Database</br>
 CREATE VIEW totalCount AS</br>
 SELECT CAST(time AS DATE), COUNT(*)</br>
 FROM log</br>
 GROUP BY CAST(time AS DATE);</br>
-5 run the command $ python data.py</br>
-6 this will show the results of query's</br>
+
+4 run the command $ python data.py</br>
+5 this will show the results of query's</br>
