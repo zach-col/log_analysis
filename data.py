@@ -1,3 +1,5 @@
+# using python 2
+
 import psycopg2
 
 def topThreeArticles():
