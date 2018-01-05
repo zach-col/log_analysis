@@ -11,6 +11,7 @@ To use view the query data</br>
 4 run this command to connect to the database this will also</br>
 run the sql commands in newsdata.sql file</br>
 $ psql -d news -f newsdata.sql</br>
+4.5 run the command "psql news" to log in to the news database</br>
 5 create errorCount view in the news Database</br>
 CREATE VIEW errorCount AS</br>
 SELECT CAST(time AS DATE), COUNT(*)</br>
@@ -23,6 +24,6 @@ CREATE VIEW totalCount AS</br>
 SELECT CAST(time AS DATE), COUNT(*)</br>
 FROM log</br>
 GROUP BY CAST(time AS DATE);</br>
-
+6.5 to exit the database press ctrl + z
 7 run the command $ python data.py</br>
 8 this will show the results of query's</br>
