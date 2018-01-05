@@ -1,6 +1,6 @@
 <h1>Project to query a database for</h1></br>
 1 top three articles</br>
-2 top actors</br>
+2 top authors</br>
 3 day's with http failed request's greater then 1%</br>
 </br>
 To use view the query data</br>
